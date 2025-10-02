@@ -5,6 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
+  base: "/mern_project",
   resolve: {
     alias: [
       { find: '@frontend', replacement: '/src' },
